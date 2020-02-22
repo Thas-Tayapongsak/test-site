@@ -1,3 +1,8 @@
+html {
+    font-size: 30px;
+    font-family: 'Lacquer';
+}
+
 #angry {
     color: darkred;
     width: 500px;
