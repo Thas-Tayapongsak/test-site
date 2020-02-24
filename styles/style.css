@@ -12,6 +12,14 @@ body {
     border: 5px solid black;
 }
 
+#selector {
+    width: 330px;
+    display: block;
+    margin: 0 auto;
+    color: blue;
+    font-size: 20px;
+}
+
 #angry {
     color: darkred;
     width: 500px;
