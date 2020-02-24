@@ -12,7 +12,7 @@ body {
     border: 5px solid black;
 }
 
-#selector {
+#selector, #change {
     width: 330px;
     display: block;
     margin: 0 auto;

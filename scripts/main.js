@@ -1,5 +1,7 @@
 let myImage = document.querySelector('img');
 let selector = document.querySelector('#selector');
+let myButton = document.querySelector('#change');
+let myHeading = document.querySelector('h1');
 
 selector.onclick = function() {
     let mySrc = myImage.getAttribute('src');
@@ -11,3 +13,25 @@ selector.onclick = function() {
       selector.textContent = 'click to change to my friend\'s cat';
     }
 }
+
+function setUserName() {
+    let myName = prompt('Please enter your name.');
+    if(!myName || myName === null) {
+      setUserName();
+    } else {
+      localStorage.setItem('name', myName);
+      myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+    }
+}
+
+if(!localStorage.getItem('name')) {
+    setUserName();
+  } else {
+    let storedName = localStorage.getItem('name');
+    myHeading.textContent = myHeading.textContent + ', ' + myName;
+}
+
+myButton.onclick = function() {
+    setUserName();
+}
+
